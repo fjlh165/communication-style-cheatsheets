@@ -1,0 +1,180 @@
+{
+  "source": {
+    "product": "Communication Style Quiz",
+    "site": "https://commstylequiz.com",
+    "site_version": "1.5.2",
+    "quiz_data_version": "1.1.0",
+    "quiz_data_date": "2026-11-16",
+    "extracted_from": "Public site files: quiz-data.js v1.1.0 and scoring.js v1.0.0, as shipped in site v1.5.2.",
+    "questions_included": false,
+    "note": "This file contains the four dimension definitions, five style result texts, result-page templates, and scoring rules used on the public quiz. The 13 quiz questions are intentionally omitted; take the quiz on the site if you want a result."
+  },
+  "disclaimer": "Just for fun and self-reflection — a snapshot of how you like to communicate, not a test of personality or ability. Not a psychological, clinical or diagnostic tool, and not scientifically validated. For adults (18+). Do not use it to predict whether a relationship will work, or to make hiring or career decisions.",
+  "scoring": {
+    "version": "1.0.0",
+    "order": [
+      "C",
+      "N",
+      "S",
+      "P"
+    ],
+    "balance_spread": 2,
+    "total_questions": 13,
+    "runs_in_browser": true,
+    "answers_are_sent": false,
+    "rules": [
+      "Each answer adds 1 point to the dimension of the chosen option. 13 questions give 13 points.",
+      "If (highest score minus lowest score) is 2 or less, the result is style B, The Navigator (balanced).",
+      "Otherwise the main style is the dimension with the highest score.",
+      "Ties for highest are broken by the fixed order C, N, S, P, and the result is flagged tied=true (the result page then names both tied styles).",
+      "The secondary style is the next-highest dimension, using the same tie order."
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "C",
+      "name": "Clarity",
+      "short": "Gets to the point",
+      "color": "#E4572E",
+      "measures": "How quickly you move a conversation toward a clear answer or decision."
+    },
+    {
+      "id": "N",
+      "name": "Connection",
+      "short": "Leads with empathy",
+      "color": "#17BEBB",
+      "measures": "How much you track the people and feelings in a conversation, not only the content."
+    },
+    {
+      "id": "S",
+      "name": "Structure",
+      "short": "Thinks in steps",
+      "color": "#2E5EAA",
+      "measures": "How much you prefer order, detail and a plan before you speak or act."
+    },
+    {
+      "id": "P",
+      "name": "Spark",
+      "short": "Brings energy and ideas",
+      "color": "#F4B400",
+      "measures": "How much you use energy, humour and new angles to move a conversation."
+    }
+  ],
+  "styles": {
+    "C": {
+      "id": "C",
+      "name": "The Pathfinder",
+      "dimension": "Clarity",
+      "oneLiner": "Says it straight, gets it done.",
+      "tagline": "Clear, decisive, and focused on what's next.",
+      "summary": "You value clarity. You say what you mean, move conversations toward decisions and respect other people's time.",
+      "tips": [
+        "Before giving a quick answer, ask one question about how the other person sees it.",
+        "Add one sentence of context or appreciation before a direct request - it lands better.",
+        "When someone needs to talk something through, set a timer in your head and just listen for two minutes."
+      ],
+      "inTheWild": [
+        "Your texts are short, and people know exactly what you're asking.",
+        "In a stalled discussion, you're the one who says \"So what are we deciding?\"",
+        "You'd rather hear the bad news now than a nice version later."
+      ],
+      "underStress": "You may get more blunt and skip the 'why' - others can hear that as impatience.",
+      "talkToMe": "Lead with the point. Tell me what you need and by when."
+    },
+    "N": {
+      "id": "N",
+      "name": "The Bridge-Builder",
+      "dimension": "Connection",
+      "oneLiner": "Hears what people don't say.",
+      "tagline": "Warm, attentive, and tuned in to people.",
+      "summary": "You value connection. You notice how others feel, make space for quieter voices and build trust.",
+      "tips": [
+        "State your own view in the first half of the conversation, not only at the end.",
+        "Practice a kind but clear 'no': \"I can't take this on this week.\"",
+        "After listening, summarize the decision or next step so the warmth turns into action."
+      ],
+      "inTheWild": [
+        "You notice when someone in the group chat has gone quiet.",
+        "People tell you things they haven't told anyone else.",
+        "You think about how a message will land before you hit send."
+      ],
+      "underStress": "You may go along with others to keep the peace and keep your real view to yourself.",
+      "talkToMe": "Check in with me as a person first. Tell me how you really feel about it."
+    },
+    "S": {
+      "id": "S",
+      "name": "The Blueprint",
+      "dimension": "Structure",
+      "oneLiner": "Has a plan for the plan.",
+      "tagline": "Thoughtful, precise, and organized.",
+      "summary": "You value structure. You think before you speak, bring order to messy discussions and get details right.",
+      "tips": [
+        "Lead with your conclusion, then offer the detail: \"Short version: yes. Here's why...\"",
+        "Share a rough draft earlier than feels comfortable - feedback beats polishing alone.",
+        "In fast conversations, it's fine to say \"Let me come back to you on that by 3 pm.\""
+      ],
+      "inTheWild": [
+        "You're the one who pins the address and the time.",
+        "\"Which part, exactly?\" is one of your favorite questions.",
+        "You'd rather reply well tomorrow than badly right now."
+      ],
+      "underStress": "You may go quiet to think, and others can read the silence as disagreement.",
+      "talkToMe": "Give me the details and a little time. Specific examples help more than general feelings."
+    },
+    "P": {
+      "id": "P",
+      "name": "The Spark",
+      "dimension": "Spark",
+      "oneLiner": "Turns any chat into an idea.",
+      "tagline": "Energetic, imaginative, and persuasive.",
+      "summary": "You value possibility. You bring energy, see new angles and get people excited to act.",
+      "tips": [
+        "End brainstorms by writing down one owner and one date for the best idea.",
+        "Pause after sharing an idea and invite one reaction before adding the next.",
+        "For important messages, cut your draft by a third and keep the single key point."
+      ],
+      "inTheWild": [
+        "You'd rather call than type three long messages.",
+        "You can turn an awkward silence into a running joke.",
+        "Your best ideas show up while you're talking, not before."
+      ],
+      "underStress": "You may talk faster and jump between ideas, and the main point can get lost.",
+      "talkToMe": "Talk it through with me live. Build on my idea before you poke holes in it."
+    },
+    "B": {
+      "id": "B",
+      "name": "The Navigator",
+      "dimension": null,
+      "oneLiner": "Speaks every style fluently.",
+      "tagline": "Adaptable - you switch styles to fit the moment.",
+      "summary": "Your answers spread fairly evenly across all four dimensions. You can be direct, warm, structured or playful depending on the situation.",
+      "tips": [
+        "Notice which style you drop under stress - that's your real default.",
+        "Tell people what you need from a conversation: a decision, a listen, a plan or ideas.",
+        "Use your range on purpose: pick the style the other person seems to prefer."
+      ],
+      "inTheWild": [
+        "You talk differently to your boss, your best friend and your group chat - on purpose.",
+        "You often end up translating between people who don't get each other.",
+        "People with very different styles all find you easy to talk to."
+      ],
+      "underStress": "You may lose your range and fall back on one style - notice which one.",
+      "talkToMe": "Tell me what this conversation is for: a decision, a listen, a plan or ideas.",
+      "scoring_note": "Assigned when the spread between the highest and lowest dimension scores is 2 points or less. It is not a fifth measured dimension."
+    }
+  },
+  "templates": {
+    "blend": "{d} first, with a {s} streak",
+    "closeCall": "Close call: your {s} side scored only one point lower, so {x} is a close second. Read both - you probably switch between them.",
+    "why": "{n} of your 13 answers pointed to {d}. For example, you picked: \"{q}\"",
+    "disclaimerTop": "Just for fun and self-reflection - a snapshot of how you like to communicate, not a test of personality or ability.",
+    "placeholders": {
+      "d": "main dimension name",
+      "p": "main style name",
+      "s": "secondary dimension name",
+      "x": "secondary style name",
+      "n": "points for that dimension (out of 13)",
+      "q": "the user's own chosen option text"
+    }
+  }
+}
